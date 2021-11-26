@@ -1,4 +1,4 @@
-package com.company;
+package jaugeNaturel;
 
 /**
  * Réalisation d'une Jauge avec des entiers naturels.
