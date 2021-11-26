@@ -1,4 +1,7 @@
 package com.passager;
+
+import static com.passager.EtatPassager.Etat.ASSIS;
+
 /**
  * Cette classe représente l'état d'un passager dans un transport.
  * Il y a un état à l'exterieur du transport (dehors) et deux états à 
@@ -6,29 +9,18 @@ package com.passager;
  *  
  * Les instances de cette classe sont des objets constants.
  **/
-// auteur DAHBIA BERRANI
-public class EtatPassager {
-  /**
-   * Définit les trois états possible d'un passager dans un transport.
-   */
-  public enum Etat {/** passager assis à l'intérieur */  ASSIS, 
-                    /** passager debout à l'intérieur */ DEBOUT,  
-                    /** passager à l'extérieur */        DEHORS};
+public class EtatPassagerChaine {
+  private  String monEtat;
 
-  private final Etat monEtat;
-
-  /**
-   * Construit une instance en précisant l'état du passager.
-   * 
-   * @param e  valeur de l'état.
-   */
-  public EtatPassager(Etat e) {
-    monEtat = e;
+  public EtatPassagerChaine(String e) {
+    this.monEtat = e;
 
     /* Le constructeur d'une classe permet d'initialiser l'etat de l'instance creee.
      * Son nom correspond toujours au nom de la classe. Il n'y a pas de type de retour.
      */
   }
+
+
 
 
   /**
@@ -37,7 +29,7 @@ public class EtatPassager {
    * @return vrai si instanciation avec DEHORS;
    */
   public boolean estExterieur() {
-    return this.monEtat == Etat.DEHORS;
+    return this.monEtat == "DEHORS";
 
   }
 
@@ -47,7 +39,7 @@ public class EtatPassager {
    * @return vrai si instanciation avec ASSIS;
    */
   public boolean estAssis() {
-    return monEtat == Etat.ASSIS;
+    return this.monEtat == "ASSIS";
   }
 
   /**
@@ -56,7 +48,7 @@ public class EtatPassager {
    * @return vrai si instanciation avec DEBOUT;
    */
   public boolean estDebout() {
-    return this.monEtat == Etat.DEBOUT;
+    return this.monEtat == "DEBOUT";
   }
 
   /**
@@ -65,7 +57,7 @@ public class EtatPassager {
    * @return vrai si instanciation avec ASSIS ou DEBOUT.
    */
   public boolean estInterieur() {
-    return this.monEtat == Etat.ASSIS || this.monEtat == Etat.DEBOUT;
+    return this.monEtat == "DEBOUT" || this.monEtat == "ASSIS";
   }
 
 

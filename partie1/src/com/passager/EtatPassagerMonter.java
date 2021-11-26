@@ -1,4 +1,5 @@
 package com.passager;
+
 /**
  * Cette classe représente l'état d'un passager dans un transport.
  * Il y a un état à l'exterieur du transport (dehors) et deux états à 
@@ -6,23 +7,22 @@ package com.passager;
  *  
  * Les instances de cette classe sont des objets constants.
  **/
-// auteur DAHBIA BERRANI
-public class EtatPassager {
+public class EtatPassagerMonter {
   /**
    * Définit les trois états possible d'un passager dans un transport.
    */
-  public enum Etat {/** passager assis à l'intérieur */  ASSIS, 
-                    /** passager debout à l'intérieur */ DEBOUT,  
-                    /** passager à l'extérieur */        DEHORS};
+  public enum Etat {/** passager assis à l'intérieur */  ASSIS,
+                    /** passager debout à l'intérieur */ DEBOUT,
+                    };
 
   private final Etat monEtat;
 
   /**
    * Construit une instance en précisant l'état du passager.
-   * 
+   *
    * @param e  valeur de l'état.
    */
-  public EtatPassager(Etat e) {
+  public EtatPassagerMonter(Etat e) {
     monEtat = e;
 
     /* Le constructeur d'une classe permet d'initialiser l'etat de l'instance creee.
@@ -31,15 +31,7 @@ public class EtatPassager {
   }
 
 
-  /**
-   * Le passager est-il à l'extérieur du transport ?
-   *
-   * @return vrai si instanciation avec DEHORS;
-   */
-  public boolean estExterieur() {
-    return this.monEtat == Etat.DEHORS;
 
-  }
 
   /**
    * Le passager est-il assis à l'intérieur du transport ?
