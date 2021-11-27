@@ -8,6 +8,9 @@ import static com.passager.EtatPassager.Etat.*;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
+/**
+ * @author: Dahbia BERRANI
+ */
 class IEtatPassagerTest {
     private IEtatPassager passager1,passager2,passager3;
     private static final boolean PASSAGER_CHAINE = false;

@@ -5,7 +5,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static com.passager.EtatPassagerMonter.Etat.*;
+import static com.passager.EtatPassagerMonter.Etat.ASSIS;
+import static com.passager.EtatPassagerMonter.Etat.DEBOUT;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 

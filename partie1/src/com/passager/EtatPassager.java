@@ -3,10 +3,11 @@ package com.passager;
  * Cette classe représente l'état d'un passager dans un transport.
  * Il y a un état à l'exterieur du transport (dehors) et deux états à 
  * l'intérieur (assis, debout).
- *  
+ *
  * Les instances de cette classe sont des objets constants.
+ * @author: Dahbia BERRANI
  **/
-// auteur DAHBIA BERRANI
+
 public class EtatPassager implements IEtatPassager {
   /**
    * Définit les trois états possible d'un passager dans un transport.

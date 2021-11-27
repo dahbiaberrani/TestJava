@@ -5,7 +5,6 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -16,7 +15,6 @@ class EtatPassagerChaineTest {
         passager4 = new EtatPassagerChaine("DEHORS");
         passager5 = new EtatPassagerChaine("ASSIS");
         passager6 = new EtatPassagerChaine("DEBOUT");
-
     }
 
     @AfterEach
@@ -50,9 +48,5 @@ class EtatPassagerChaineTest {
         assertFalse(passager4.estInterieur());
         assertTrue(passager5.estInterieur());
         assertTrue(passager6.estInterieur());
-    }
-
-    @Test
-    void testToString() {
     }
 }
