@@ -9,7 +9,7 @@ import static com.passager.EtatPassager.Etat.ASSIS;
  *  
  * Les instances de cette classe sont des objets constants.
  **/
-public class EtatPassagerChaine {
+public class EtatPassagerChaine implements IEtatPassager {
   private  String monEtat;
 
   public EtatPassagerChaine(String e) {

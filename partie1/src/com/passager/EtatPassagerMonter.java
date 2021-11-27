@@ -60,7 +60,15 @@ public class EtatPassagerMonter {
     return this.monEtat == Etat.ASSIS || this.monEtat == Etat.DEBOUT;
   }
 
+  /**
+   * Le passager est-il à l'extérieur du transport ?
+   *
+   * @return vrai si instanciation avec DEHORS;
+   */
+  public boolean estExterieur() {
+    return false;
 
+  }
 
   /**
    * Cette méthode est heritée de la classe {@link Object}.

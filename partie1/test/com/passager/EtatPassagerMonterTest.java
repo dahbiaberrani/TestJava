@@ -5,7 +5,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static com.passager.EtatPassager.Etat.*;
+import static com.passager.EtatPassagerMonter.Etat.*;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -43,6 +43,15 @@ class EtatPassagerMonterTest {
 
         assertTrue(passager2.estInterieur());
         assertTrue(passager3.estInterieur());
+    }
+
+    @Test
+    void estExterieur() {
+
+        assertFalse(passager2.estExterieur());
+        assertTrue(passager2.estAssis());
+        assertFalse(passager2.estDebout());
+
     }
 
     @Test

@@ -7,7 +7,7 @@ package com.passager;
  * Les instances de cette classe sont des objets constants.
  **/
 // auteur DAHBIA BERRANI
-public class EtatPassager {
+public class EtatPassager implements IEtatPassager {
   /**
    * Définit les trois états possible d'un passager dans un transport.
    */
@@ -30,13 +30,13 @@ public class EtatPassager {
      */
   }
 
-
   /**
    * Le passager est-il à l'extérieur du transport ?
    *
    * @return vrai si instanciation avec DEHORS;
    */
-  public boolean estExterieur() {
+  @Override
+  public boolean estExterieur()  {
     return this.monEtat == Etat.DEHORS;
 
   }

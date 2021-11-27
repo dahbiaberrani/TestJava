@@ -10,12 +10,12 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 class EtatPassagerChaineTest {
-    private EtatPassagerChaine passager1,passager2,passager3;
+    private EtatPassagerChaine passager4, passager5, passager6;
     @BeforeEach
     void setUp() {
-        passager1 = new EtatPassagerChaine("DEHORS");
-        passager2 = new EtatPassagerChaine("ASSIS");
-        passager3 = new EtatPassagerChaine("DEBOUT");
+        passager4 = new EtatPassagerChaine("DEHORS");
+        passager5 = new EtatPassagerChaine("ASSIS");
+        passager6 = new EtatPassagerChaine("DEBOUT");
 
     }
 
@@ -26,30 +26,30 @@ class EtatPassagerChaineTest {
     @Test
     void estExterieur() {
 
-        assertTrue(passager1.estExterieur());
-        assertFalse(passager1.estAssis());
-        assertFalse(passager1.estDebout());
+        assertTrue(passager4.estExterieur());
+        assertFalse(passager4.estAssis());
+        assertFalse(passager4.estDebout());
     }
 
     @Test
     void estAssis() {
-        assertFalse(passager2.estExterieur());
-        assertTrue(passager2.estAssis());
-        assertFalse(passager2.estDebout());
+        assertFalse(passager5.estExterieur());
+        assertTrue(passager5.estAssis());
+        assertFalse(passager5.estDebout());
     }
 
     @Test
     void estDebout() {
-        assertFalse(passager3.estExterieur());
-        assertFalse(passager3.estAssis());
-        assertTrue(passager3.estDebout());
+        assertFalse(passager6.estExterieur());
+        assertFalse(passager6.estAssis());
+        assertTrue(passager6.estDebout());
     }
 
     @Test
     void estInterieur() {
-        assertFalse(passager1.estInterieur());
-        assertTrue(passager2.estInterieur());
-        assertTrue(passager3.estInterieur());
+        assertFalse(passager4.estInterieur());
+        assertTrue(passager5.estInterieur());
+        assertTrue(passager6.estInterieur());
     }
 
     @Test
